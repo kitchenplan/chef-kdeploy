@@ -60,3 +60,7 @@ end
 # Locales
 
 include_recipe "locale-gen::default"
+
+# kDeploy
+
+include_recipe "kdeploy::kdeploy"
