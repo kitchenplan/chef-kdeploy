@@ -9,6 +9,6 @@ version          '0.1.0'
 supports 'ubuntu'
 
 
-depends          "build_essential"
+depends          "build-essential"
 depends          "ssh_known_hosts"
 depends          "root_ssh_agent"
