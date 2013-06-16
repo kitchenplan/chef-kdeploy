@@ -36,8 +36,27 @@ include_recipe "php::module_memcache"
 include_recipe "php::module_intl"
 include_recipe "php::module_mcrypt"
 
+include_recipe "composer::default"
+
 # MySQL
 
 include_recipe "percona::server"
 include_recipe "percona::toolkit"
 include_recipe "percona::configure_server"
+
+# Memcached
+
+include_recipe "memcached::default"
+
+# Support applications
+
+include_recipe "imagemagick::devel"
+include_recipe "java::openjdk"
+
+chef_gem "sass" do
+  action :install
+end
+
+# Locales
+
+include_recipe "locale-gen::default"
