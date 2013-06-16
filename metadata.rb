@@ -19,3 +19,5 @@ depends          "composer"
 depends          "java"
 depends          "locale-gen"
 depends          "imagemagick"
+depends          "memcached"
+
