@@ -12,3 +12,6 @@ supports 'ubuntu'
 depends          "build-essential"
 depends          "ssh_known_hosts"
 depends          "root_ssh_agent"
+depends          "apache2"
+depends          "php"
+depends          "percona"
