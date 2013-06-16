@@ -4,6 +4,12 @@
 
 package "libpq-dev"
 package "python-dev"
+package "python-setuptools"
+
+execute "Update distribute" do
+    user "root"
+    command "easy_install -U distribute"
+end
 
 easy_install_package "psycopg2"
 easy_install_package "MySQL-python"
